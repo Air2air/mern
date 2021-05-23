@@ -4,10 +4,12 @@ export const validateUsername = username => {
   let valid = true;
   let message = 'Username Valid';
 
+  
   if (!R.match(/^[a-zA-Z0-9_]+$/, username).length) {
-    message = 'Invalid character used';
+    message = 'Don\'t use your email';
     valid = false;
-  } else if (username.length < 4) {
+  } else 
+  if (username.length < 4) {
     message = 'Username must be at least four characters';
     valid = false;
   } else if (username.length > 20) {
