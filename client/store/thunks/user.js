@@ -1,10 +1,10 @@
 import { snakeToCamelCase } from 'json-style-converter/es5';
 import { store as RNC } from 'react-notifications-component';
 
-import { getUser, putUser, putUserPassword } from '_api/user';
+import { getUser, putUser, putUserPassword } from './../../api/user';
 import { updateUser } from '_actions/user';
 
-import { dispatchError } from '_utils/api';
+import { dispatchError } from './../../api/api';
 
 export const attemptGetUser = () => dispatch =>
   getUser()

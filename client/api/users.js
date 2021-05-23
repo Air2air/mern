@@ -1,5 +1,5 @@
 import request from 'superagent';
-import { handleSuccess, handleError } from '_utils/api';
+import { handleSuccess, handleError } from './api';
 
 export const postCheckUsername = username =>
   request.post('/api/users/checkusername')

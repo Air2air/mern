@@ -2,12 +2,12 @@ import { combineReducers } from 'redux';
 import { connectRouter } from 'connected-react-router';
 
 import user from './user';
-import todos from './todos';
+import topics from './topics';
 
 const createRootReducer = history => combineReducers({
   router: connectRouter(history),
   user,
-  todos,
+  topics,
 });
 
 export default createRootReducer;

@@ -5,18 +5,18 @@ import ReactNotification from 'react-notifications-component';
 import { useDispatch } from 'react-redux';
 import R from 'ramda';
 
-import { attemptGetUser } from '_thunks/user';
+import { attemptGetUser } from './../../../store/thunks/user';
 
-import WelcomePage from '_pages/WelcomePage';
-import LoginPage from '_pages/LoginPage';
-import RegisterPage from '_pages/RegisterPage';
-import HomePage from '_pages/HomePage';
-import TodoPage from '_pages/TodoPage';
-import SettingsPage from '_pages/SettingsPage';
-import LostPage from '_pages/LostPage';
+import WelcomePage from './../../../pages/WelcomePage';
+import LoginPage from './../../../pages/LoginPage';
+import RegisterPage from './../../../pages/RegisterPage';
+import HomePage from './../../../pages/HomePage';
+import TopicPage from './../../../pages/TopicPage';
+import SettingsPage from './../../../pages/SettingsPage';
+import LostPage from './../../../pages/LostPage';
 
-import Navigation from '_organisms/Navigation';
-import Footer from '_organisms/Footer';
+import Navigation from './../../Navigation';
+import Footer from './../../Footer';
 
 export default function Main({ location }) {
   const dispatch = useDispatch();
@@ -42,7 +42,7 @@ export default function Main({ location }) {
           <Route path="/login" component={LoginPage} />
           <Route path="/register" component={RegisterPage} />
           <Route path="/home" component={HomePage} />
-          <Route path="/todo" component={TodoPage} />
+          <Route path="/topic" component={TopicPage} />
           <Route path="/settings" component={SettingsPage} />
           <Route path="*" component={LostPage} />
         </Switch>
