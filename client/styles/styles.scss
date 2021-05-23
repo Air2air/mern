@@ -1,0 +1,21 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./_color_functions.scss";
+@import "./_colors.scss";
+@import "./_text.scss";
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heights */
+nav.navbar {
+  height: 10vh;
+}
+.topic-content {
+  height: 45vh;
+}
+.topics-button {
+  height: 45vh;
+}

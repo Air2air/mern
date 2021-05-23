@@ -1,0 +1,45 @@
+$orange: #ff9000;
+$body-text: #5a6169;
+$heading-text: #212529;
+$link-color: #0067f4;
+
+$hover-blue: #5fa0fa;
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$background: $orange;
+$text-color: $background;
+
+body {
+  background-color: $background;
+  color: a11y-color($text-color, $background);
+  .nav-icon-link {
+    color: a11y-color($text-color, $background);
+  }
+}
+
+.topics-button {
+  color: a11y-color($text-color, $background);
+  transition: 0.3s;
+  &.left {
+    background-color: darken($background, 3%);
+    &:hover {
+      background-color: lighten($background, 3%);
+    }
+  }
+  &.right {
+    background-color: lighten($background, 5%);
+    &:hover {
+      background-color: darken($background, 5%);
+    }
+  }
+}
